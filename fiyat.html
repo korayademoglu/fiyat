@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <select class="form-control" name="hizmet" id="fiyatcek" onchange="fiyatAl()" required>
+        <option value="">Lütfen hizmet seçiniz.</option>
+        <option value="1">Ürün 1 - 25.00 TL</option>
+        <option value="2">Ürün 2 - 50.00 TL</option>
+        <option value="3">Ürün 3 - 100.00 TL</option>
+    </select>
+    <input type="text" value="" id="fiyatgetir">
+
+    <script>
+        function fiyatAl() {
+            var fc = document.getElementById("fiyatcek");
+            var fg = document.getElementById("fiyatgetir");
+            var fb = fc.options[fc.selectedIndex].text.split(" ")
+            fg.value = fb[fb.length - 2];
+        }
+    </script>
+
+</body>
+
+</html>
