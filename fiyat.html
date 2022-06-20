@@ -12,9 +12,9 @@
 
     <script>
         function fiyatAl() {
-            var fc = document.getElementById("fiyatcek");
-            var fg = document.getElementById("fiyatgetir");
-            var fb = fc.options[fc.selectedIndex].text.split(" ")
+            let fc = document.getElementById("fiyatcek");
+            let fg = document.getElementById("fiyatgetir");
+            let fb = fc.options[fc.selectedIndex].text.split(" ")
             fg.value = fb[fb.length - 2];
         }
     </script>
